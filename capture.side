@@ -1,0 +1,88 @@
+{
+  "id": "a1bcf9d6-93bd-4a65-965c-d5e0da8b082e",
+  "version": "2.0",
+  "name": "capture",
+  "url": "https://wheelofnames.com",
+  "tests": [{
+    "id": "f50c4a07-6286-456e-a35c-e157c0afbf2e",
+    "name": "captureTest",
+    "commands": [{
+      "id": "71da4339-8813-4558-a98d-c2a71098ed4e",
+      "comment": "",
+      "command": "open",
+      "target": "/rde-2ug",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "934cacf2-2199-49ee-90b5-1478122c2b59",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1680x1050",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "01a472a1-c272-412a-9ac1-cc50d4f69fb5",
+      "comment": "",
+      "command": "click",
+      "target": "id=bottomInstruction",
+      "targets": [
+        ["id=bottomInstruction", "id"],
+        ["css=#bottomInstruction", "css:finder"],
+        ["xpath=//div[@id='bottomInstruction']", "xpath:attributes"],
+        ["xpath=//div[@id='instructionsLayer']/div[2]", "xpath:idRelative"],
+        ["xpath=//section/div/div[2]/div/div/div[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "934a610b-754e-4346-a448-9004541324b0",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,0)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "060f27f0-69ca-412d-9786-138e0356bdd9",
+      "comment": "",
+      "command": "click",
+      "target": "css=.title",
+      "targets": [
+        ["css=.title", "css:finder"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'Alex O')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "f14c10a1-7687-4149-a65b-4239b893780e",
+      "comment": "",
+      "command": "click",
+      "target": "css=.is-medium:nth-child(1)",
+      "targets": [
+        ["css=.is-medium:nth-child(1)", "css:finder"],
+        ["xpath=(//button[@type='button'])[4]", "xpath:attributes"],
+        ["xpath=//footer/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Close')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "4cafdc8d-b01c-4879-805c-c7894ab8dbed",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.title > span",
+      "targets": [
+        ["css=.title > span", "css:finder"],
+        ["xpath=//h1/span", "xpath:position"]
+      ],
+      "value": "winner"
+    }]
+  }],
+  "suites": [{
+    "id": "6be55ad8-9031-4b7a-990b-af7ecb268143",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["f50c4a07-6286-456e-a35c-e157c0afbf2e"]
+  }],
+  "urls": ["https://wheelofnames.com/"],
+  "plugins": []
+}
