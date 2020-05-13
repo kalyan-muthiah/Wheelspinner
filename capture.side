@@ -21,6 +21,13 @@
       "targets": [],
       "value": ""
     }, {
+      "id": "6d48979d-2065-4559-94b5-344bf4a4c3aa",
+      "comment": "",
+      "command": "click",
+      "target": "css=span:nth-child(3) > .button:nth-child(1) > span",
+      "targets": [],
+      "value": ""
+    }, {
       "id": "01a472a1-c272-412a-9ac1-cc50d4f69fb5",
       "comment": "",
       "command": "click",
